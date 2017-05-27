@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Width</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 120px;
+            background-color:lime;
+        }
+        #test_1{
+            width:200px;
+            height: 60px;
+            background-color:yellow;
+            max-width: 200px;
+            min-width: 250px;
+        }
+        #test_2{
+            width:999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999%;
+            height: 60px;
+            background-color:tomato;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="test_1"></div>
+        <div id="test_2"></div>
+    </div>
+</body>
+</html>

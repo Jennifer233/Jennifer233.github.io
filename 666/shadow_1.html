@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shadow_1</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        .fire{
+            font-size: 100px;
+            color: black;
+            text-shadow: 0px -12px 45px yellow, 15px -12px 45px red, 0px -12px 5px yellow, -10px -20px 50px red, -2px -50px 150px red, 6px -6px 90px yellow, -3px -4px 50px orange, -10px -40px 50px red, 8px -30px 50px red, 8px -20px 60px #ffba00, 25px -60px 100px #ff8000, 10px -50px 60px #ff5d07, 10px -70px 100px yellow;
+        }
+        
+        .frost{
+            font-size: 100px;
+            color: aliceblue;
+            text-shadow: 0px -15px 5px darkgray, 0px -15px 140px rgba(123, 253, 253, 0.87), 0px -25px 140px rgba(123, 253, 253, 0.87), 0px -35px 140px rgba(123, 253, 253, 0.87), 0px 15px 140px rgba(123, 253, 253, 0.87), 0px 25px 140px rgba(123, 253, 253, 0.87), 0px 35px 140px rgba(123, 253, 253, 0.87), 20px 0px 140px rgba(123, 253, 253, 0.87), 10px 0px 140px rgba(123, 253, 253, 0.87), 0px 0px 140px rgba(123, 253, 253, 0.87), -10px 0px 140px rgba(123, 253, 253, 0.87), -20px 0px 140px rgba(123, 253, 253, 0.87), 40px -10px 140px rgba(123, 253, 253, 0.87), 20px 10px 140px rgba(123, 253, 253, 0.87), 10px 10px 140px rgba(123, 253, 253, 0.87), 0px 10px 140px rgba(123, 253, 253, 0.87), -10px 10px 140px rgba(123, 253, 253, 0.87), 20px -10px 140px rgba(123, 253, 253, 0.87), 10px -10px 140px rgba(123, 253, 253, 0.87), 0px -10px 140px rgba(123, 253, 253, 0.87), -10px -10px 140px rgba(123, 253, 253, 0.87), -40px -10px 140px rgba(123, 253, 253, 0.87), 60px 0px 140px white, 60px 10px 140px white, 60px 20px 140px white, 60px 30px 140px white, 60px 40px 140px white, 30px 60px 140px white, 20px 60px 140px white, 10px 60px 140px white, 0px 60px 140px white, -10px 60px 140px white, 60px 0px 140px white, 60px 10px 140px white, 60px 20px 140px white, 60px 30px 140px white, 60px 40px 140px white, 30px 60px 140px white, 20px 60px 140px white, 10px 60px 140px white, 0px 60px 140px white, -10px 60px 140px white, -30px 40px 140px white, -30px 30px 140px white, -30px 20px 140px white, -30px 30px 140px white, -30px 0px 140px white, -30px -10px 140px white, -30px -20px 140px white, -40px 40px 140px white, -40px 30px 140px white, -40px 20px 140px white, -40px 30px 140px white, -40px 0px 140px white, -40px -10px 140px white, -40px -20px 140px white, -60px 40px 140px white, -60px 30px 140px white, -30px 20px 140px white, -60px 30px 140px white, -60px 0px 140px white, -30px -10px 140px white, -30px -20px 140px white, -40px 40px 140px white, -40px 30px 140px white, -40px 20px 140px white, -40px 30px 140px white, -40px 0px 140px white, -40px -10px 140px white, -40px -20px 140px white, -30px -50px 140px white, -20px -50px 140px white, -10px -50px 140px white, 0px -50px 140px white, 10px -50px 140px white, 20px -50px 140px white, 30px -50px 140px white, 40px -50px 140px white, 50px -50px 140px white;
+        }
+        .photoflash{
+            font-size: 100px;
+            color: #bbc3ff;
+            text-shadow:0px -15px 5px black, 0px 0px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 200px white, 10px 10px 100px white, 10px 10px 200px white, -20px -20px 200px white, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, -20px -20px 400px #fbffd1, 40px -20px 400px #fbffd1, 40px -20px 400px #fbffd1, 40px -20px 400px #fbffd1, 40px -20px 400px #fbffd1, 40px -20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 200px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1, 0px 20px 400px #fbffd1;
+        }
+        
+        .ice{
+            font-size: 100px;
+            color: #fff500;
+            text-shadow:;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="fire">FIRE</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="frost">FROST</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="photoflash">PHOTOFLASH</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--    <div class="ice">ICE</div>-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>copyright &copy; YiFei Zhang</footer>
+</body>
+</html>

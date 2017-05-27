@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Width</title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+        }
+        div{
+/*            width: 200px;*/
+            height: 100px;
+            background-color: white;
+            color:black;
+        }
+        #block{
+/*            width: 0px;*/
+/*            width: auto;*/
+            width: 100%;
+        }
+        #inline{
+            display: inline;
+            width: 0px;
+            width: auto;
+            width: 100%;
+        }
+        #inline_block{
+            display: inline-block;
+            width: 0px;
+            width: auto;
+/*            width: 100%;*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="block">Content</div>
+    <div id="inline">Content</div>
+    <div id="inline_block">Content</div>
+</body>
+</html>

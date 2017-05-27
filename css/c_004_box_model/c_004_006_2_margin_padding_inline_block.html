@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin Padding Inline Block</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #first{
+            color: black;
+            display: inline-block;
+/*            width: 200px;*/
+            height:100px;
+            background-color:white;
+            margin-top: 100px;
+            margin-right: 1000000000000000px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            padding: 50px;
+            padding-right: 100px;
+        }
+        #second{
+            height:100px;
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        <ul>
+            <li>If there are no other element in the same line margin-right does not work.</li>
+        </ul>
+    </h3>
+    <div id="first">First</div>
+    <div id="second"></div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where is your face</title>
+    <style>
+        #background_color{
+            background-color: lime;
+            width: 500px;
+            height: 500px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        #face{
+            background-color: yellow;
+            width: 480px;
+            height: 480px;
+            z-index: 1;
+            border-radius: 100%;
+        }
+        #eye_1{
+            background-color: white;
+            width: 150px;
+            height: 180px;
+            z-index: 4;
+            border-radius: 100px;
+            display: inline-block;
+            margin-top: 90px;
+            margin-left: 110px;
+        }
+        #eye_2{
+            background-color: white;
+            width: 150px;
+            height: 180px;
+            z-index: 4;
+            border-radius: 100px;
+            display: inline-block;
+            margin-top: 90px;
+            margin-left: 30px;
+        }
+        #eye_black_1{
+            background-color: black;
+            width:90px;
+            height: 100px;
+            z-index: 5;
+            border-radius:100px;
+            margin-top: 25px;
+            margin-left: 10px
+        }
+        #eye_black_2{
+            background-color: black;
+            width:90px;
+            height: 100px;
+            z-index: 5;
+            border-radius:100px;
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        #mouth{
+            border: solid 27px;
+            width: 220px;
+            height: 100px;
+            z-index: 2;
+            border-radius: 100%;
+            margin-top: -99px;
+            margin-left: 120px;
+        }
+        #mouth_cover{
+            background-color: yellow;
+            width: 275px;
+            height: 90px;
+            z-index: 3;
+            margin-top: -52px;
+            margin-left: -28px
+        }
+        #mouth_corner_1{
+            background-color: black;
+            width: 24px;
+            height: 60px;
+            z-index: 4;
+            margin-left: 117px;
+            transform: rotate(50deg);
+        }
+        #mouth_corner_2{
+            background-color: black;
+            width: 24px;
+            height: 60px;
+            z-index: 4;
+            margin-left: 370px;
+            margin-top: -114px;
+            transform: rotate(-50deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="background_color">
+        <div id="face">
+            <div id="eye_1">
+                <div id="eye_black_1"></div>
+            </div>
+            <div id="eye_2">
+                <div id="eye_black_2"></div>
+            </div>
+            <div id="mouth_corner_1"></div>
+            <div id="mouth">
+                <div id="mouth_cover"></div>
+            </div>
+            <div id="mouth_corner_2"></div>
+        </div>
+    </div>
+</body>
+</html>

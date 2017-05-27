@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		form {
+/*			text-align: center;*/
+			margin: 0 auto;
+			width: 500px;
+		}
+		
+		textarea {
+			width: 200px;
+			height: 100px;
+		}
+		
+		div.input_label {
+			width: 100px;
+		}
+		
+		div.input_label label {
+			height: 21px;
+		}
+		
+		div.input {
+			width: 380px;
+		}
+		
+		div.input_label, div.input {
+			display: inline-block;
+		}
+		label{
+			display: inline-block;
+			text-align: left;
+			width: 100px;
+		}
+		
+		.input {
+			width: 200px;
+		}
+		
+		select {
+			width: 207px;
+		}
+		
+		#city {
+			width: 204px
+		}
+		
+		textarea {
+			width: 422px;
+			margin-top: 10px;
+		}
+		
+		button {
+			margin-left: 372px;
+		}
+	</style>
+</head>
+
+<body>
+	<fieldset class="my_information">
+		<legend>My Imformation</legend>
+		<form>
+			<div class="input_label">
+				<label for="name">Name:</label>
+				<label for="email">Email:</label>
+				<label for="phone">Phone:</label>
+				<label for="city">City:</label>
+				<label for="">Payment</label>
+			</div>
+			<div class="input">
+			<input class='input' id="name" type=text>
+			<input class='input' id="email" type=email>
+			<input class="input" id="phone" type=tel>
+			<select class='input' id="city">
+				<option value="Toronto">Toronto</option>
+				<option value="Ottawa">Ottawa</option>
+				<option value="Montreal">Montreal</option>
+				<option value="Vancouver">Vancouver</option>
+				<option value="Calgary">Calgary</option>
+				<option value="Edmonton"></option>
+				<option value="Winnipeg"></option>
+				<option value="Hamilton"></option>
+				<option value="Regina"></option>
+				<option value="Windsor"></option>
+				<option value="Quebec City"></option>
+			</select>
+			<div id="radio_group">
+				<input id="master_card" type="radio" name="food" checked>
+				<label for="master_card">Master Card</label>
+				<input id="visa_card" type="radio" name="food">
+				<label for="visa_card">Visa Card</label>
+				<input id="paypal" type="radio" name="food">
+				<label for="paypal">Paypal</label>
+			</div>
+				
+			</div>
+			<br>
+			<textarea placeholder="Please Enter Your Comments"></textarea>
+			<br>
+			<button type="submit">Submet</button>
+		</form>
+	</fieldset>
+</body>
+
+</html>

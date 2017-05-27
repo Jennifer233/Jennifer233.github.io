@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+        .my_information lable{
+            width:140px;
+            display: inline-block
+        }
+        .order_information lable{
+            width:140px;
+            display:inline-block;
+        }
+        body{
+            text-align: center;
+            background-color:lightcyan;
+            color:forestgreen;
+        }
+        .hamburger_pic{
+            max-height: 120px
+        }
+        .pizza_pic{
+            max-height: 100px
+        }
+        .hotdog_pic{
+            max-height: 84px
+        }
+        .pumpkin_pie_pic{
+            max-height: 124px
+        }
+        input{
+            background-color: lightcyan;
+            color: forestgreen;
+            outline-color: aquamarine;
+            width: 150px
+        }
+        button{
+            background-color: lightcyan;
+            color:forestgreen;
+            outline-color: aquamarine;
+            height: 40px;
+            width: 140px;
+        }
+        textarea{
+            background-color: lightcyan;
+            color:forestgreen;
+            outline-color: aquamarine
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Order</h1>
+    <form>
+        <fieldset class="my_information">
+            <legend>My Imformation</legend>
+            <select>
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+            </select>
+            <br>
+            <label for="name">Name:</label>
+            <input id="name" type=text>
+            <br>
+            <label for="email">Email:</label>
+            <input id="email" type=email>
+            <br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type=tel>
+            <br>
+            <label for="city">City:</label>
+            <input list=city>
+            <datalist id="city">
+                <option value="Toronto"></option>
+                <option value="Ottawa"></option>
+                <option value="Montreal"></option>
+                <option value="Vancouver"></option>
+                <option value="Calgary"></option>
+                <option value="Edmonton"></option>
+                <option value="Winnipeg"></option>
+                <option value="Hamilton"></option>
+                <option value="Regina"></option>
+                <option value="Windsor"></option>
+                <option value="Quebec City"></option>
+            </datalist>
+        </fieldset>
+        <fieldset class="order_information">
+            <legend>Order Information</legend>
+            <img src="https://mcdonalds.com.au/sites/mcdonalds.com.au/files/hero_pdt_hamburger.png" alt="Hamburger picture" class=hamburger_pic>
+            <br>
+            <lable for="hamburger">Hamburger:</lable>
+            <input id="hamburger" type=number min=0>
+            <br>
+            <img src="http://toninospizzaandpasta.com/wp-content/uploads/2014/04/pizza-page.png" alt="Pizza picture" class=pizza_pic>
+            <br>
+            <lable for="pizaa"> pizza:</lable>
+            <input id="pizza" type=number min=0>
+            <br>
+            <img src="http://rustlersonline.com/wp-content/uploads/HotDog.png" alt="Hotdog pictre" class="hotdog_pic">
+            <br>
+            <lable for="hotdog">Hotdog:</lable>
+            <input id="hotdog" type=number min=0>
+            <br>
+            <img src="http://ecolebrassenscleguer.nuxit.net/bingo/images/thanksgiving/Pumpkin_Pie.gif" alt="Pumpkin pie picture" class="pumpkin_pie_pic">
+            <br>
+            <lable for="pumpkin_pie">Pumpkinpie:</lable>
+            <input id="pumpkin_pie" type=number min=0>
+            <br>
+            <lable for=date>Date: </lable>
+            <input id="date" type=date>
+            <br>
+            <lable for="time">Time</lable>
+            <input id=time type=time>
+            <br>
+            <lable for="payment_method">Payment Method:</lable>
+            <input list="payment_method" type="text">
+            <datalist id="payment_method">
+                <option value="Masther card"></option>
+                <option value="Visa card"></option>
+                <option value="Paypal"></option>
+            </datalist>
+        </fieldset>
+        <br>
+        <textarea cols="41" rows="10">Please Enter Your Comments</textarea>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

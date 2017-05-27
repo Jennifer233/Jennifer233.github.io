@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            width:150px;
+        }
+        #radio_group input{
+            width: 20px;
+        }
+        #checkbox_group input{
+            width: 20px
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <br>
+        <input type="password" placeholder="Your Password" required>
+        <br>
+        <input type="hidden">
+        <br>
+        <input type="number" max=10 min=0 placeholder="Number Of Food You Want">
+        <br>
+        <input type="email" placeholder="Your Email">
+        <br>
+        <input type="url" placeholder="Please Enter a url" placeholder="Enter A Url" required>
+        <br>
+        <input type="tel" placeholder="Please Enter Your Phone Number">
+        <br>
+        <input min=1 max=5 type="range" onchange="updateTextInput(this.value)">
+        <input type="text" id="rangeValue">
+        <br>
+        <input type="color">
+        <br>
+        <input type="file">
+        <br>
+        <input type="search">
+        <br>
+        <div id="radio_group">
+            <lable id="burger"for="">Burger</lable>
+            <input id="burger"type="radio" name="food" checked>
+            <lable for="pizza">Pizza</lable>
+            <input id="pizza"type="radio" name="food">
+            <lable for="hotdog">Hotdog</lable>
+            <input id="hotdog"type="radio" name="food">
+        </div>
+        <div id="checkbox_group">
+            <input type="checkbox">
+            <lable>Want some coke?</lable>
+        </div>
+        <br>
+        <input type="submit">
+    </form>
+    <script>
+        function updateTextInput(val){
+            document.getElementById("rangeValue").value=val;
+        }
+    </script>
+</body>
+</html>

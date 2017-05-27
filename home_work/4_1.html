@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order_2</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: azure;
+            color: green;
+        }
+        input{
+            width: 180px；
+        }
+        .my_information label{
+            width: 240px;
+            display: inline-block;
+        }
+        .order label{
+            width: 240px;
+            display: inline-block;
+        }
+        .hamburger_pic{
+            width:140px;
+        }
+        .pizza_pic{
+            width:140px;
+        }
+        .hotdog_pic{
+            width:140px;
+        }
+        .pumpkin_pie_pic{
+            width:140px;
+        }
+        button{
+            width:130px;
+            height:30px;
+            outline-color: aqua;
+        }
+        #check_box_group input{
+            width:10px;
+        }
+        #radio_group input{
+            width:30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Order</h1>
+        <fieldset class="my_information">
+            <legend>My Information</legend>
+            <select>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Ms</option>
+            </select>
+            <br>
+            <label for=name>Name:</label>
+            <input type=text id="name" placeholder="Please Enter Your Full Name" required>
+            <br>
+            <label for=email>Email:</label>
+            <input type="email" id="email" placeholder="Please Enter Your Email" required>
+            <br>
+            <label for=phone>Phone:</label>
+            <input type="tel" id="phone" placeholder="Please Enter Your Phone Number" required>
+            <br>
+            <select>
+                <option>Toronto</option>
+                <option>Ottawa</option>
+                <option>Montreal</option>
+                <option>Vancouver</option>
+                <option>Calgary</option>
+                <option>Edmonton</option>
+                <option>Winnipeg</option>
+                <option>Hamilton</option>
+                <option>Regina</option>
+                <option>Windsor</option>
+                <option>Quebec City</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Order Information</legend>
+                <div class="order">
+                   <div id="check_box_group">
+                    <input type="checkbox">
+                    <img src="https://mcdonalds.com.au/sites/mcdonalds.com.au/files/hero_pdt_hamburger.png" alt="Hamburger picture" class=hamburger_pic>
+                    <input type="checkbox">
+                    <img src="http://toninospizzaandpasta.com/wp-content/uploads/2014/04/pizza-page.png" alt="Pizza picture" class=pizza_pic>
+                    <input type="checkbox">
+                    <img src="http://rustlersonline.com/wp-content/uploads/HotDog.png" alt="Hotdog pictre" class="hotdog_pic">
+                    <input type="checkbox">
+                    <img src="http://ecolebrassenscleguer.nuxit.net/bingo/images/thanksgiving/Pumpkin_Pie.gif" alt="Pumpkin pie picture" class="pumpkin_pie_pic">
+                </div>
+                <br>
+                <br>
+                <br>
+                <label for="number_of_people">People(1-10):</label>
+                <input id="number_of_people" type="range" min=0 max=10 required>
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+            </div>
+            <br>
+            <div id="radio_group">
+                <input id="master_card" type="radio" name="food" checked>
+                <label for="master_card">Master Card</label>
+                <input id="visa_card" type="radio" name="food">
+                <label for="visa_card">Visa Card</label>
+                <input id="paypal"type="radio" name="food">
+                <label for="paypal">Paypal</label>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Please Enter your Comments."></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">Submet</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
