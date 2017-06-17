@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style>
+        .hid{
+            width:300px;
+            height: 100px;
+            border: double blue;
+            overflow: hidden;
+            
+        }
+        .vis{
+            width:300px;
+            height: 100px;
+            border: double blue;
+            overflow: visible;
+        }
+        .scr{
+            width:300px;
+            height: 100px;
+            border: double blue;
+            overflow: scroll;
+        }
+		::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 11px;
+            height: 21px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hid">
+        <img src="http://img-cache.cdn.gaiaonline.com/739235a2314e05561e71e2ac2ebfed44/http://i1238.photobucket.com/albums/ff483/TheBeautifulVirus/love/blackkitty.jpg" alt="">
+    </div>
+    <div class="vis">
+        <img src="http://img-cache.cdn.gaiaonline.com/739235a2314e05561e71e2ac2ebfed44/http://i1238.photobucket.com/albums/ff483/TheBeautifulVirus/love/blackkitty.jpg" alt="">
+    </div>
+    <div class="scr">
+        <img src="http://img-cache.cdn.gaiaonline.com/739235a2314e05561e71e2ac2ebfed44/http://i1238.photobucket.com/albums/ff483/TheBeautifulVirus/love/blackkitty.jpg" alt="">
+    </div>
+</body>
+</html>

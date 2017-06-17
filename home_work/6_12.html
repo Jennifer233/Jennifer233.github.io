@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+        }
+        .fir,.sec{
+            display: inline-block;
+            font-family: sans-serif;
+        }
+        .fir{
+            font-size: 20px;
+        }
+        .sec{
+            font-size: 13px;
+        }
+        .con{
+            background-color: rgba(162, 162, 162, 0.37);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px
+        }
+        @media screen and (max-width: 992px){
+            .fir,.sec{
+                display: block;
+            }
+            .con{
+                width: 600px;
+            }
+        }
+        @media screen and (min-width: 992px){
+            .con{
+                width: 760px;
+            }
+            .fir{
+                margin-right: 230px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="fir"><b>TEENS     PROGRAMMING</b></div>
+        <div class="sec"><b>TECHNOLOGIES COURSES     ABOUT CONTACT</b></div>
+    </div>
+</body>
+</html>

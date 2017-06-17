@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow float</title>
+    <style>
+        body{
+            background-color: black
+        }
+        #container{
+            background-color: white;
+            overflow: auto
+        }
+        #left,#right{
+            width:200px;
+            height: 100px;
+        }
+        #left{
+            background-color: gray;
+            float: left;
+        }
+        #right{
+            background-color: darkgrey;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+</html>
