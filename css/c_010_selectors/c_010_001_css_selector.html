@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div{
+            color: #777777 !important;
+        }
+        div.sen{
+            color: #ffffff
+        }
+        div span{
+            color: #9f9f9f;
+        }
+        div>p{
+            color: #d8d8d8;
+        }
+        #wor{
+            color: #e5e5e5;
+        }
+        [data="dat"]{
+            color:#ffffff;
+        }
+        li:first-child{
+            color:#888888;
+        }
+        li:nth-child(2){
+            color: #b2b2b2
+        }
+    </style>
+</head>
+<body>
+    <div id="wor" class="sen" data="dat">
+        !important>longpath>inline style>id>attr=class>tag
+        <br>
+        If css specificity is the same the last one>previous one.
+        <p>lazy <span>lazy</span></p>
+    </div>
+    <ul>
+        <li>lazy</li>
+        <li>lazy</li>
+        <li style="color: #d1d1d1">lazy</li>
+    </ul>
+</body>
+</html>
